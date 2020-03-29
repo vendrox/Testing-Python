@@ -11,7 +11,7 @@ def setup_driver():
 	driver = webdriver.Chrome("C:\\Users\\Usuario\\Testing-Python\\resources\\chromedriver", chrome_options=chrome_options)
 	return driver
 
-@pytest.mark.skip
+
 def test_simple_load():
 	driver = setup_driver()
 	driver.get("https://egarciasec.github.io/pdex/")
