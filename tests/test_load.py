@@ -35,3 +35,19 @@ class TestLoad:
 				break
 			except:
 				time.sleep(1)
+
+	def test_pokemon_image(self):
+		driver = self.driver
+		driver.get("https://egarciasec.github.io/pdex/")
+		input_element = driver.find_element_by_xpath('//*[@id="PokeINFO"]/input')
+		input_element.clear()
+		input_element.send_keys("bulbasaur")
+		search = driver.find_element_by_xpath('//*[@id="PokeINFO"]/button')
+		search.click()
+		for _ in range(0,3):
+			try:
+				image_element = driver.find_element_by_xpath('//*[@id="root"]/img')
+				assert image_element.size['height'] > 0
+				break
+			except:
+				time.sleep(1)
