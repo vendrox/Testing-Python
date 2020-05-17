@@ -33,6 +33,7 @@ def test_pokemon_search():
 		except:
 			time.sleep(1)
 	driver.quit() 
+<<<<<<< HEAD
 
 def test_pokemon_image():
 	driver = setup_driver()
@@ -53,3 +54,5 @@ def test_pokemon_image():
 	
 
 	
+=======
+>>>>>>> a60aadc44e49b6d174393eca9a38bd6da9656305
