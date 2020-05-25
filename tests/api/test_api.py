@@ -2,18 +2,23 @@ import pytest
 import requests
 
 class TestAPI:
-    url_pokemon="https://pokeapi.co/api/v2/pokemon/bulbasaur/"
-    url_type="https://pokeapi.co/api/v2/type/poison/"
+
+    base_url = "https://pokeapi.co/api/v2"
+    endpoint_pokemon = "/pokemon/bulbasaur/"
+    endpoint_type = "/type/poison/"
+
+    expected_name = "bulbasaur"
+    expected_type = "poison"
     
     def test_simple_search(self):
-        response = requests.get(self.url_pokemon)
+        response = requests.get(self.base_url + self.endpoint_pokemon)
         body = response.json()
         name = body["name"]
-        assert name == "bulbasaur"
+        assert name == self.expected_name
 
     def test_simple_type_search(self):
-        response = requests.get(self.url_type)
+        response = requests.get(self.base_url + self.endpoint_type)
         body = response.json()
         name = body["name"]
-        assert name == "poison"
+        assert name == self.expected_type
         
