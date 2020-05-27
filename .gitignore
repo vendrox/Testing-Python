@@ -11,8 +11,3 @@
 *.pickle
 *.npy
 .cache/
-py/env/
-py/enva/
-py/env27/
-**/*.egg-info/
-py/test/junit-pytest-report.xml
