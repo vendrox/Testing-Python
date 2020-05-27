@@ -1,6 +1,7 @@
 # IDE
 .vscode
 
+<<<<<<< HEAD
 # MAC JUNK
 ._*
 .DS_Store
@@ -11,3 +12,7 @@
 *.pickle
 *.npy
 .cache/
+=======
+# Pycache
+*/__pycache__/
+>>>>>>> 536db7210dfa8ae059dcfd0e332e1a2bbace05a5
