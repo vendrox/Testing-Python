@@ -1,5 +1,18 @@
-# VS Code
+# IDE
 .vscode
 
-# Pycache
-tests/__pycache__/
+# MAC JUNK
+._*
+.DS_Store
+
+# PYTHON
+*__pycache__
+*.pyc
+*.pickle
+*.npy
+.cache/
+py/env/
+py/enva/
+py/env27/
+**/*.egg-info/
+py/test/junit-pytest-report.xml
