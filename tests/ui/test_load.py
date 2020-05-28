@@ -4,7 +4,10 @@ from selenium import webdriver
 import chromedriver_binary # noqa F401
 from core.MainPage.page import MainPage
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f4a6bccfd756f021eebd7743f09c1ef9da85fd60
 @pytest.mark.ui
 class TestLoad:
 
