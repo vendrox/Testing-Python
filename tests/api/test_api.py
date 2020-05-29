@@ -1,10 +1,6 @@
 import pytest
 from core.api.api_requests import APIRequests
 
-<<<<<<< HEAD
-
-=======
->>>>>>> f4a6bccfd756f021eebd7743f09c1ef9da85fd60
 @pytest.mark.api
 class TestAPI:
 
