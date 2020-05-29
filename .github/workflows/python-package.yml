@@ -34,7 +34,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test API with pytest
       run: |
-        pytest -m api
+        python -m pytest -m api
     - name: Test UI with pytest
       run: |
-        pytest -m ui
+        python -m pytest -m ui
