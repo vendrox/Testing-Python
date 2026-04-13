@@ -1,4 +1,4 @@
 chromedriver-binary==80.0.3987.106
-pytest==5.3.5
+pytest==9.0.3
 selenium==3.141.0
 requests
